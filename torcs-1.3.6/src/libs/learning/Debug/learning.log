@@ -1,0 +1,30 @@
+﻿Build started 5/30/2015 4:08:08 PM.
+     1>Project "C:\Users\Justin\Downloads\torcs-1.3.6\src\libs\learning\learning.vcxproj" on node 4 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I../../../export/include /I../../.. /Zi /nologo /W2 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D _USRDLL /D LEARNING_EXPORTS /D DEBUG /D DEBUG_OUT /D _VC80_UPGRADE=0x0600 /D _WINDLL /D _MBCS /Gm- /EHsc /RTC1 /MTd /GS /Gy- /fp:precise /Zc:wchar_t /Zc:forScope /Fo".\Debug\\" /Fd".\Debug\vc120.pdb" /FR".\Debug\\" /Gd /TP /analyze- /errorReport:prompt string_utils.cpp
+         string_utils.cpp
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:".\Debug\learning.dll" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /NODEFAULTLIB:LIBCMT /DEF:".\learning.def" /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:".\Debug\learning.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\Debug\learning.lib" /MACHINE:X86 /SAFESEH /DLL .\Debug\ANN.obj
+         .\Debug\ann_policy.obj
+         .\Debug\Distribution.obj
+         .\Debug\List.obj
+         .\Debug\MathFunctions.obj
+         .\Debug\policy.obj
+         .\Debug\string_utils.obj
+            Creating library .\Debug\learning.lib and object .\Debug\learning.exp
+         learning.vcxproj -> C:\Users\Justin\Downloads\torcs-1.3.6\src\libs\learning\.\Debug\learning.dll
+       BscMake:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\bscmake.exe /nologo /o".\Debug\learning.bsc" .\Debug\ANN.sbr .\Debug\ann_policy.sbr .\Debug\Distribution.sbr .\Debug\List.sbr .\Debug\MathFunctions.sbr .\Debug\policy.sbr .\Debug\string_utils.sbr
+       PostBuildEvent:
+         copy C:\Users\Justin\Downloads\torcs-1.3.6\src\libs\learning\Debug\*.dll C:\Users\Justin\Downloads\torcs-1.3.6\runtimed
+         copy C:\Users\Justin\Downloads\torcs-1.3.6\src\libs\learning\Debug\*.lib C:\Users\Justin\Downloads\torcs-1.3.6\export\libd
+         :VCEnd
+         C:\Users\Justin\Downloads\torcs-1.3.6\src\libs\learning\Debug\learning.dll
+                 1 file(s) copied.
+         C:\Users\Justin\Downloads\torcs-1.3.6\src\libs\learning\Debug\learning.lib
+                 1 file(s) copied.
+     1>Done Building Project "C:\Users\Justin\Downloads\torcs-1.3.6\src\libs\learning\learning.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:03.79

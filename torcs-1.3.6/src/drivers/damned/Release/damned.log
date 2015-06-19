@@ -1,0 +1,14 @@
+﻿Build started 6/17/2015 11:25:11 PM.
+     1>Project "C:\Users\Justin\Downloads\torcs-1.3.6\src\drivers\damned\damned.vcxproj" on node 5 (Build target(s)).
+     1>Link:
+         damned.vcxproj -> C:\Users\Justin\Downloads\torcs-1.3.6\src\drivers\damned\.\Release\damned.dll
+       PostBuildEvent:
+         copy C:\Users\Justin\Downloads\torcs-1.3.6\src\drivers\damned\Release\*.dll C:\Users\Justin\Downloads\torcs-1.3.6\runtime\drivers\damned
+         :VCEnd
+         C:\Users\Justin\Downloads\torcs-1.3.6\src\drivers\damned\Release\damned.dll
+                 1 file(s) copied.
+     1>Done Building Project "C:\Users\Justin\Downloads\torcs-1.3.6\src\drivers\damned\damned.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:00.84

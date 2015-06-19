@@ -1,0 +1,32 @@
+﻿Build started 6/13/2015 10:48:40 PM.
+     1>Project "C:\Users\Justin\Downloads\torcs-1.3.6\src\modules\simu\simuv2\simuv2.vcxproj" on node 4 (Build target(s)).
+     1>Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:".\Release\simuv2.dll" /INCREMENTAL:NO /NOLOGO /LIBPATH:../../../../export/lib /LIBPATH:../../../windows/lib solid.lib tgf.lib robottools.lib sg.lib ul.lib odbc32.lib odbccp32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /DEF:".\simuv2.def" /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\Release\simuv2.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\Release\simuv2.lib" /MACHINE:X86 /SAFESEH:NO /DLL .\Release\aero.obj
+         .\Release\axle.obj
+         .\Release\brake.obj
+         .\Release\car.obj
+         .\Release\categories.obj
+         .\Release\collide.obj
+         .\Release\differential.obj
+         .\Release\engine.obj
+         .\Release\simu.obj
+         .\Release\simuitf.obj
+         .\Release\steer.obj
+         .\Release\susp.obj
+         .\Release\transmission.obj
+         .\Release\wheel.obj
+         "C:\Users\Justin\Downloads\torcs-1.3.6\src\libs\robottools\Release\robottools.lib"
+         "C:\Users\Justin\Downloads\torcs-1.3.6\src\libs\tgf\Release\tgf.lib"
+         "C:\Users\Justin\Downloads\torcs-1.3.6\src\modules\simu\simuv2\SOLID-2.0\Release\solid.lib"
+            Creating library .\Release\simuv2.lib and object .\Release\simuv2.exp
+         simuv2.vcxproj -> C:\Users\Justin\Downloads\torcs-1.3.6\src\modules\simu\simuv2\.\Release\simuv2.dll
+       PostBuildEvent:
+         copy C:\Users\Justin\Downloads\torcs-1.3.6\src\modules\simu\simuv2\Release\*.dll C:\Users\Justin\Downloads\torcs-1.3.6\runtime\modules\simu
+         :VCEnd
+         C:\Users\Justin\Downloads\torcs-1.3.6\src\modules\simu\simuv2\Release\simuv2.dll
+                 1 file(s) copied.
+     1>Done Building Project "C:\Users\Justin\Downloads\torcs-1.3.6\src\modules\simu\simuv2\simuv2.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:02.59

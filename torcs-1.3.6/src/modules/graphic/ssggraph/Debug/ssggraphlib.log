@@ -1,0 +1,57 @@
+﻿Build started 5/30/2015 4:08:08 PM.
+     1>Project "C:\Users\Justin\Downloads\torcs-1.3.6\src\modules\graphic\ssggraph\ssggraphlib.vcxproj" on node 3 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I./ /I../../../../export/include /I../../../windows/include /I../../../.. /Zi /nologo /W2 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _LIB /D DEBUG /D DEBUG_OUT /D _VC80_UPGRADE=0x0600 /D _MBCS /Gm- /EHsc /RTC1 /MTd /GS /Gy- /fp:precise /Zc:wchar_t /Zc:forScope /Fo".\Debug\\" /Fd".\Debug\vc120.pdb" /FR".\Debug\\" /Gd /TP /analyze- /errorReport:prompt CarSoundData.cpp grboard.cpp grcam.cpp grcar.cpp grcarlight.cpp grmain.cpp grscene.cpp grscreen.cpp grsmoke.cpp grsound.cpp grutil.cpp OpenalSoundInterface.cpp PlibSoundInterface.cpp SoundInterface.cpp TorcsSound.cpp
+         CarSoundData.cpp
+         grboard.cpp
+         grcam.cpp
+         grcar.cpp
+         grcarlight.cpp
+         grmain.cpp
+         grscene.cpp
+         grscreen.cpp
+         grsmoke.cpp
+         grsound.cpp
+         grutil.cpp
+         OpenalSoundInterface.cpp
+         PlibSoundInterface.cpp
+         SoundInterface.cpp
+         TorcsSound.cpp
+         Generating Code...
+       Lib:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\Lib.exe /OUT:".\Debug\ssggraphlib.lib" /NOLOGO .\Debug\CarSoundData.obj
+         .\Debug\grboard.obj
+         .\Debug\grcam.obj
+         .\Debug\grcar.obj
+         .\Debug\grcarlight.obj
+         .\Debug\grloadac.obj
+         .\Debug\grmain.obj
+         .\Debug\grmultitexstate.obj
+         .\Debug\grscene.obj
+         .\Debug\grscreen.obj
+         .\Debug\grshadow.obj
+         .\Debug\grskidmarks.obj
+         .\Debug\grsmoke.obj
+         .\Debug\grsound.obj
+         .\Debug\grtexture.obj
+         .\Debug\grtrackmap.obj
+         .\Debug\grutil.obj
+         .\Debug\grvtxtable.obj
+         .\Debug\OpenalSoundInterface.obj
+         .\Debug\PlibSoundInterface.obj
+         .\Debug\SoundInterface.obj
+         .\Debug\ssggraph.obj
+         .\Debug\TorcsSound.obj
+         ssggraphlib.vcxproj -> C:\Users\Justin\Downloads\torcs-1.3.6\src\modules\graphic\ssggraph\.\Debug\ssggraphlib.lib
+       BscMake:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\bscmake.exe /nologo /o".\Debug\ssggraphlib.bsc" .\Debug\CarSoundData.sbr .\Debug\grboard.sbr .\Debug\grcam.sbr .\Debug\grcar.sbr .\Debug\grcarlight.sbr .\Debug\grloadac.sbr .\Debug\grmain.sbr .\Debug\grmultitexstate.sbr .\Debug\grscene.sbr .\Debug\grscreen.sbr .\Debug\grshadow.sbr .\Debug\grskidmarks.sbr .\Debug\grsmoke.sbr .\Debug\grsound.sbr .\Debug\grtexture.sbr .\Debug\grtrackmap.sbr .\Debug\grutil.sbr .\Debug\grvtxtable.sbr .\Debug\OpenalSoundInterface.sbr .\Debug\PlibSoundInterface.sbr .\Debug\SoundInterface.sbr .\Debug\ssggraph.sbr .\Debug\TorcsSound.sbr
+       PostBuildEvent:
+         copy C:\Users\Justin\Downloads\torcs-1.3.6\src\modules\graphic\ssggraph\Debug\*.lib ..\..\..\..\export\libd
+         :VCEnd
+         C:\Users\Justin\Downloads\torcs-1.3.6\src\modules\graphic\ssggraph\Debug\ssggraphlib.lib
+                 1 file(s) copied.
+     1>Done Building Project "C:\Users\Justin\Downloads\torcs-1.3.6\src\modules\graphic\ssggraph\ssggraphlib.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:26.90

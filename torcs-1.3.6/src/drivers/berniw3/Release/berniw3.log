@@ -1,0 +1,22 @@
+﻿Build started 6/13/2015 10:48:37 PM.
+     1>Project "C:\Users\Justin\Downloads\torcs-1.3.6\src\drivers\berniw3\berniw3.vcxproj" on node 4 (Build target(s)).
+     1>Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:".\Release\berniw3.dll" /INCREMENTAL:NO /NOLOGO /LIBPATH:../../../export/lib /LIBPATH:../../windows/lib tgf.lib robottools.lib sg.lib ul.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /DEF:".\berniw3.def" /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\Release\berniw3.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\Release\berniw3.lib" /MACHINE:X86 /SAFESEH:NO /DLL .\Release\berniw3.obj
+         .\Release\mycar.obj
+         .\Release\pathfinder.obj
+         .\Release\spline.obj
+         .\Release\trackdesc.obj
+         "C:\Users\Justin\Downloads\torcs-1.3.6\src\libs\robottools\Release\robottools.lib"
+         "C:\Users\Justin\Downloads\torcs-1.3.6\src\libs\tgf\Release\tgf.lib"
+            Creating library .\Release\berniw3.lib and object .\Release\berniw3.exp
+         berniw3.vcxproj -> C:\Users\Justin\Downloads\torcs-1.3.6\src\drivers\berniw3\.\Release\berniw3.dll
+       PostBuildEvent:
+         copy C:\Users\Justin\Downloads\torcs-1.3.6\src\drivers\berniw3\Release\*.dll C:\Users\Justin\Downloads\torcs-1.3.6\runtime\drivers\berniw3
+         :VCEnd
+         C:\Users\Justin\Downloads\torcs-1.3.6\src\drivers\berniw3\Release\berniw3.dll
+                 1 file(s) copied.
+     1>Done Building Project "C:\Users\Justin\Downloads\torcs-1.3.6\src\drivers\berniw3\berniw3.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:01.34

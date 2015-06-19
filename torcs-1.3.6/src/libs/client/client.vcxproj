@@ -1,0 +1,244 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Template|Win32">
+      <Configuration>Template</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <SccProjectName />
+    <SccLocalPath />
+    <ProjectGuid>{D7BE3286-4ED9-4B7B-A0F7-C4A61909CBA4}</ProjectGuid>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Template|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Template|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>.\Release\</OutDir>
+    <IntDir>.\Release\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>.\Debug\</OutDir>
+    <IntDir>.\Debug\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <StringPooling>true</StringPooling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <Optimization>MaxSpeed</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level2</WarningLevel>
+      <AdditionalIncludeDirectories>../../../export/include;../../interfaces;../../windows/include;../../..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;CLIENT_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>.\Release\</AssemblerListingLocation>
+      <PrecompiledHeaderOutputFile>.\Release\client.pch</PrecompiledHeaderOutputFile>
+      <ObjectFileName>.\Release\</ObjectFileName>
+      <ProgramDataBaseFileName>.\Release\</ProgramDataBaseFileName>
+    </ClCompile>
+    <PostBuildEvent>
+      <Command>copy $(TargetDir)*.dll $(SolutionDir)runtime
+copy $(TargetDir)*.lib $(SolutionDir)export\lib</Command>
+    </PostBuildEvent>
+    <Midl>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <TypeLibraryName>.\Release\client.tlb</TypeLibraryName>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <TargetEnvironment>Win32</TargetEnvironment>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x040c</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\Release\client.bsc</OutputFile>
+    </Bscmake>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <LinkDLL>true</LinkDLL>
+      <SubSystem>Console</SubSystem>
+      <ModuleDefinitionFile>.\client.def</ModuleDefinitionFile>
+      <OutputFile>.\Release\client.dll</OutputFile>
+      <ImportLibrary>.\Release\client.lib</ImportLibrary>
+      <AdditionalLibraryDirectories>../../../export/lib;../../windows/lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>txml.lib;libpng15_vs6static.lib;sg.lib;ul.lib;tgf.lib;robottools.lib;ssggraphlib.lib;ssg.lib;ssgAux.lib;sl.lib;OpenAL32.lib;Alut.lib;libogg.lib;libvorbis.lib;libvorbisfile.lib;zlib1_vs6static.lib;js.lib;Advapi32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <Optimization>Disabled</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level2</WarningLevel>
+      <TreatWarningAsError>false</TreatWarningAsError>
+      <AdditionalIncludeDirectories>../../../export/include;../../windows/include;../../interfaces;../../..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;CLIENT_EXPORTS;DEBUG;DEBUG_OUT;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>.\Debug\</AssemblerListingLocation>
+      <BrowseInformation>true</BrowseInformation>
+      <PrecompiledHeaderOutputFile>.\Debug\client.pch</PrecompiledHeaderOutputFile>
+      <ObjectFileName>.\Debug\</ObjectFileName>
+      <ProgramDataBaseFileName>.\Debug\</ProgramDataBaseFileName>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+    </ClCompile>
+    <PostBuildEvent>
+      <Command>copy $(TargetDir)*.dll $(SolutionDir)runtimed
+copy $(TargetDir)*.lib $(SolutionDir)export\libd</Command>
+    </PostBuildEvent>
+    <Midl>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <TypeLibraryName>.\Debug\client.tlb</TypeLibraryName>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <TargetEnvironment>Win32</TargetEnvironment>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x040c</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\Debug\client.bsc</OutputFile>
+    </Bscmake>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <LinkDLL>true</LinkDLL>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <IgnoreSpecificDefaultLibraries>LIBCMT;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <OutputFile>.\Debug\client.dll</OutputFile>
+      <ImportLibrary>.\Debug\client.lib</ImportLibrary>
+      <AdditionalLibraryDirectories>../../../export/libd;../../windows/lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>txml.lib;libpng15_vs6static.lib;sg.lib;ul.lib;tgf.lib;robottools.lib;ssggraphlib.lib;ssg.lib;ssgAux.lib;sl.lib;OpenAL32.lib;Alut.lib;libogg.lib;libvorbis.lib;libvorbisfile.lib;zlib1_vs6static.lib;js.lib;Advapi32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <ModuleDefinitionFile>.\client.def</ModuleDefinitionFile>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\confscreens\controlconfig.cpp" />
+    <ClCompile Include="..\confscreens\driverconfig.cpp" />
+    <ClCompile Include="..\confscreens\graphconfig.cpp" />
+    <ClCompile Include="..\confscreens\joystickconfig.cpp" />
+    <ClCompile Include="..\confscreens\mouseconfig.cpp" />
+    <ClCompile Include="..\confscreens\openglconfig.cpp" />
+    <ClCompile Include="..\confscreens\simuconfig.cpp" />
+    <ClCompile Include="..\confscreens\soundconfig.cpp" />
+    <ClCompile Include="..\musicplayer\musicplayer.cpp" />
+    <ClCompile Include="..\musicplayer\OggSoundStream.cpp" />
+    <ClCompile Include="..\musicplayer\OpenALMusicPlayer.cpp" />
+    <ClCompile Include="..\musicplayer\SoundStream.cpp" />
+    <ClCompile Include="..\raceengineclient\raceengine.cpp" />
+    <ClCompile Include="..\raceengineclient\racegl.cpp" />
+    <ClCompile Include="..\raceengineclient\raceinit.cpp" />
+    <ClCompile Include="..\raceengineclient\racemain.cpp" />
+    <ClCompile Include="..\raceengineclient\racemanmenu.cpp" />
+    <ClCompile Include="..\raceengineclient\raceresults.cpp" />
+    <ClCompile Include="..\raceengineclient\racestate.cpp" />
+    <ClCompile Include="..\raceengineclient\singleplayer.cpp" />
+    <ClCompile Include="..\racescreens\carsetupscreen.cpp" />
+    <ClCompile Include="..\racescreens\driverselect.cpp" />
+    <ClCompile Include="..\racescreens\fileselect.cpp" />
+    <ClCompile Include="..\racescreens\loadingscreen.cpp" />
+    <ClCompile Include="..\racescreens\miscscreens.cpp" />
+    <ClCompile Include="..\racescreens\pitmenu.cpp" />
+    <ClCompile Include="..\racescreens\racemenu.cpp" />
+    <ClCompile Include="..\racescreens\results.cpp" />
+    <ClCompile Include="..\racescreens\trackselect.cpp" />
+    <ClCompile Include="..\tgfclient\control.cpp" />
+    <ClCompile Include="..\tgfclient\glfeatures.cpp" />
+    <ClCompile Include="..\tgfclient\gui.cpp" />
+    <ClCompile Include="..\tgfclient\guibutton.cpp" />
+    <ClCompile Include="..\tgfclient\guiedit.cpp" />
+    <ClCompile Include="..\tgfclient\guifont.cpp" />
+    <ClCompile Include="..\tgfclient\guihelp.cpp" />
+    <ClCompile Include="..\tgfclient\guiimage.cpp" />
+    <ClCompile Include="..\tgfclient\guilabel.cpp" />
+    <ClCompile Include="..\tgfclient\guimenu.cpp" />
+    <ClCompile Include="..\tgfclient\guiobject.cpp" />
+    <ClCompile Include="..\tgfclient\guiscrollbar.cpp" />
+    <ClCompile Include="..\tgfclient\guiscrollist.cpp" />
+    <ClCompile Include="..\tgfclient\img.cpp" />
+    <ClCompile Include="..\tgfclient\screen.cpp" />
+    <ClCompile Include="..\tgfclient\tgfclient.cpp" />
+    <ClCompile Include="entry.cpp" />
+    <ClCompile Include="errno.cpp" />
+    <ClCompile Include="exitmenu.cpp" />
+    <ClCompile Include="mainmenu.cpp" />
+    <ClCompile Include="optionmenu.cpp" />
+    <ClCompile Include="splash.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="client.def">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="client.h" />
+    <ClInclude Include="driverconfig.h" />
+    <ClInclude Include="exitmenu.h" />
+    <ClInclude Include="mainmenu.h" />
+    <ClInclude Include="optionmenu.h" />
+    <ClInclude Include="splash.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\modules\graphic\ssggraph\ssggraphlib.vcxproj">
+      <Project>{42263a14-75f4-4570-adad-89a3656b68fe}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\robottools\robottools.vcxproj">
+      <Project>{91087d6e-2575-46da-b8a4-9afe5994c3ca}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\tgf\tgf.vcxproj">
+      <Project>{4ed6ac0e-7e43-45f1-a8a4-f6cc46513c91}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

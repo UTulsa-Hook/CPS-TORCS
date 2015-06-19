@@ -1,0 +1,211 @@
+0\CVS\Repository:torcs/torcs/src/drivers/bt/0
+0\Makefile:ROBOT       = bt
+0\practice\CVS\Repository:torcs/torcs/src/drivers/bt/0/practice
+0\practice\Makefile:ROBOT       = bt
+0\qualifying\CVS\Repository:torcs/torcs/src/drivers/bt/0/qualifying
+0\qualifying\Makefile:ROBOT       = bt
+0\race\CVS\Repository:torcs/torcs/src/drivers/bt/0/race
+0\race\Makefile:ROBOT       = bt
+1\CVS\Repository:torcs/torcs/src/drivers/bt/1
+1\Makefile:ROBOT       = bt
+1\practice\CVS\Repository:torcs/torcs/src/drivers/bt/1/practice
+1\practice\Makefile:ROBOT       = bt
+1\qualifying\CVS\Repository:torcs/torcs/src/drivers/bt/1/qualifying
+1\qualifying\Makefile:ROBOT       = bt
+1\race\CVS\Repository:torcs/torcs/src/drivers/bt/1/race
+1\race\Makefile:ROBOT       = bt
+2\CVS\Repository:torcs/torcs/src/drivers/bt/2
+2\Makefile:ROBOT       = bt
+3\CVS\Repository:torcs/torcs/src/drivers/bt/3
+3\Makefile:ROBOT       = bt
+4\CVS\Repository:torcs/torcs/src/drivers/bt/4
+4\Makefile:ROBOT       = bt
+5\CVS\Repository:torcs/torcs/src/drivers/bt/5
+5\Makefile:ROBOT       = bt
+6\CVS\Repository:torcs/torcs/src/drivers/bt/6
+6\Makefile:ROBOT       = bt
+7\CVS\Repository:torcs/torcs/src/drivers/bt/7
+7\Makefile:ROBOT       = bt
+8\CVS\Repository:torcs/torcs/src/drivers/bt/8
+8\Makefile:ROBOT       = bt
+9\CVS\Repository:torcs/torcs/src/drivers/bt/9
+9\Makefile:ROBOT       = bt
+bt.cpp:    file                 : bt.cpp
+bt.cpp:    version              : $Id: bt.cpp,v 1.5.2.2 2008/11/09 17:50:19 berniw Exp $
+bt.cpp:	"bt 1", "bt 2", "bt 3", "bt 4", "bt 5",
+bt.cpp:	"bt 6", "bt 7", "bt 8", "bt 9", "bt 10"
+bt.cpp:	"bt 1", "bt 2", "bt 3", "bt 4", "bt 5",
+bt.cpp:	"bt 6", "bt 7", "bt 8", "bt 9", "bt 10"
+bt.cpp:extern "C" int bt(tModInfo *modInfo)
+bt.def:;   file                 : bt.def
+bt.def:LIBRARY	bt
+bt.def:	bt
+bt.dsp:# Microsoft Developer Studio Project File - Name="bt" - Package Owner=<4>
+bt.dsp:CFG=bt - Win32 Debug
+bt.dsp:!MESSAGE NMAKE /f "bt.mak".
+bt.dsp:!MESSAGE NMAKE /f "bt.mak" CFG="bt - Win32 Debug"
+bt.dsp:!MESSAGE "bt - Win32 Release" (basierend auf  "Win32 (x86) Dynamic-Link Library")
+bt.dsp:!MESSAGE "bt - Win32 Debug" (basierend auf  "Win32 (x86) Dynamic-Link Library")
+bt.dsp:!IF  "$(CFG)" == "bt - Win32 Release"
+bt.dsp:# ADD BASE CPP /nologo /MT /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "BT_EXPORTS" /YX /FD /c
+bt.dsp:# ADD CPP /nologo /G6 /MT /W2 /GX /O2 /Ob2 /I "../../../export/include" /I "../../windows/include" /I "../../.." /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "BT_EXPORTS" /FD /c
+bt.dsp:# SUBTRACT CPP /YX
+bt.dsp:PostBuild_Cmds=copy $(TargetDir)\*.dll $(WkspDir)\runtime\drivers\bt
+bt.dsp:!ELSEIF  "$(CFG)" == "bt - Win32 Debug"
+bt.dsp:# ADD BASE CPP /nologo /MTd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "BT_EXPORTS" /YX /FD /GZ /c
+bt.dsp:# ADD CPP /nologo /G6 /MTd /W2 /GX /Zi /Od /I "../../../export/include" /I "../../windows/include" /I "../../.." /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "BT_EXPORTS" /D "DEBUG" /D "DEBUG_OUT" /FR /FD /GZ /c
+bt.dsp:# SUBTRACT CPP /YX
+bt.dsp:# ADD BASE LINK32 kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /dll /debug /machine:I386 /pdbtype:sept
+bt.dsp:# ADD LINK32 tgf.lib robottools.lib sg.lib ul.lib /nologo /dll /map /debug /machine:I386 /nodefaultlib:"LIBCMT" /pdbtype:sept /libpath:"../../../export/libd" /libpath:"../../windows/lib"
+bt.dsp:PostBuild_Cmds=copy $(TargetDir)\*.dll $(WkspDir)\runtimed\drivers\bt
+bt.dsp:# Name "bt - Win32 Release"
+bt.dsp:# Name "bt - Win32 Debug"
+bt.dsp:SOURCE=.\bt.cpp
+bt.dsp:SOURCE=.\bt.def
+bt.vcproj:	Name="bt"
+bt.vcproj:				TypeLibraryName=".\Debug/bt.tlb"
+bt.vcproj:				PreprocessorDefinitions="WIN32;_DEBUG;_WINDOWS;_USRDLL;BT_EXPORTS;DEBUG;DEBUG_OUT"
+bt.vcproj:				PrecompiledHeaderFile=".\Debug/bt.pch"
+bt.vcproj:				OutputFile=".\Debug/bt.dll"
+bt.vcproj:				ModuleDefinitionFile=".\bt.def"
+bt.vcproj:				ProgramDatabaseFile=".\Debug/bt.pdb"
+bt.vcproj:				MapFileName=".\Debug/bt.map"
+bt.vcproj:				ImportLibrary=".\Debug/bt.lib"
+bt.vcproj:				OutputFile=".\Debug/bt.bsc"
+bt.vcproj:				CommandLine="copy $(TargetDir)*.dll $(SolutionDir)runtimed\drivers\bt"
+bt.vcproj:				TypeLibraryName=".\Release/bt.tlb"
+bt.vcproj:				PreprocessorDefinitions="WIN32;NDEBUG;_WINDOWS;_USRDLL;BT_EXPORTS"
+bt.vcproj:				PrecompiledHeaderFile=".\Release/bt.pch"
+bt.vcproj:				OutputFile=".\Release/bt.dll"
+bt.vcproj:				ModuleDefinitionFile=".\bt.def"
+bt.vcproj:				ProgramDatabaseFile=".\Release/bt.pdb"
+bt.vcproj:				MapFileName=".\Release/bt.map"
+bt.vcproj:				ImportLibrary=".\Release/bt.lib"
+bt.vcproj:				OutputFile=".\Release/bt.bsc"
+bt.vcproj:				CommandLine="copy $(TargetDir)*.dll $(SolutionDir)runtime\drivers\bt"
+bt.vcproj:				RelativePath="bt.cpp"
+bt.vcproj:				RelativePath="bt.def"
+bt.vcxproj:      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;BT_EXPORTS;DEBUG;DEBUG_OUT;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+bt.vcxproj:      <PrecompiledHeaderOutputFile>.\Debug\bt.pch</PrecompiledHeaderOutputFile>
+bt.vcxproj:      <Command>copy $(TargetDir)*.dll $(SolutionDir)runtimed\drivers\bt</Command>
+bt.vcxproj:      <TypeLibraryName>.\Debug\bt.tlb</TypeLibraryName>
+bt.vcxproj:      <OutputFile>.\Debug\bt.bsc</OutputFile>
+bt.vcxproj:      <OutputFile>.\Debug\bt.dll</OutputFile>
+bt.vcxproj:      <ImportLibrary>.\Debug\bt.lib</ImportLibrary>
+bt.vcxproj:      <ModuleDefinitionFile>.\bt.def</ModuleDefinitionFile>
+bt.vcxproj:      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;BT_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+bt.vcxproj:      <PrecompiledHeaderOutputFile>.\Release\bt.pch</PrecompiledHeaderOutputFile>
+bt.vcxproj:      <Command>copy $(TargetDir)*.dll $(SolutionDir)runtime\drivers\bt</Command>
+bt.vcxproj:      <TypeLibraryName>.\Release\bt.tlb</TypeLibraryName>
+bt.vcxproj:      <OutputFile>.\Release\bt.bsc</OutputFile>
+bt.vcxproj:      <OutputFile>.\Release\bt.dll</OutputFile>
+bt.vcxproj:      <ImportLibrary>.\Release\bt.lib</ImportLibrary>
+bt.vcxproj:      <ModuleDefinitionFile>.\bt.def</ModuleDefinitionFile>
+bt.vcxproj:    <ClCompile Include="bt.cpp" />
+bt.vcxproj:    <CustomBuild Include="bt.def" />
+bt.vcxproj.filters:    <ClCompile Include="bt.cpp">
+bt.vcxproj.filters:    <CustomBuild Include="bt.def">
+bt.xml:    file                 : bt.xml
+bt.xml:    version              : $Id: bt.xml,v 1.2.2.2 2012/02/07 20:42:45 berniw Exp $
+bt.xml:<params name="bt" type="robotdef">
+bt.xml:        <attstr name="name" val="bt 1"></attstr>
+bt.xml:        <attstr name="name" val="bt 2"></attstr>
+bt.xml:		  <attstr name="name" val="bt 3"/>
+bt.xml:		  <attstr name="name" val="bt 4"/>
+bt.xml:		  <attstr name="name" val="bt 5"/>
+bt.xml:		  <attstr name="name" val="bt 6"/>
+bt.xml:		  <attstr name="name" val="bt 7"/>
+bt.xml:		  <attstr name="name" val="bt 8"/>
+bt.xml:		  <attstr name="name" val="bt 9"/>
+bt.xml:		  <attstr name="name" val="bt 10"/>
+cardata.h:#ifndef _BT_CARDATA_H_
+cardata.h:#define _BT_CARDATA_H_
+cardata.h:#endif // _BT_CARDATA_H_
+CVS\Entries:/bt.cpp/1.5.2.2/Sun Nov  9 17:50:19 2008//Tr1-3-1
+CVS\Entries:/bt.def/1.2/Wed Aug 13 00:04:14 2003//Tr1-3-1
+CVS\Entries:/bt.dsp/1.9.2.2/Sat Dec 31 03:27:56 2011//Tr1-3-1
+CVS\Entries:/bt.vcproj/1.1.2.3/Sun Jan  1 21:32:53 2012//Tr1-3-1
+CVS\Entries:/bt.xml/1.2.2.2/Tue Feb  7 20:42:45 2012//Tr1-3-1
+CVS\Repository:torcs/torcs/src/drivers/bt
+Debug\bt.Build.CppClean.log:c:\users\justin\downloads\torcs-1.3.6\src\drivers\bt\debug\vc120.pdb
+Debug\bt.Build.CppClean.log:c:\users\justin\downloads\torcs-1.3.6\src\drivers\bt\debug\bt.sbr
+Debug\bt.Build.CppClean.log:c:\users\justin\downloads\torcs-1.3.6\src\drivers\bt\debug\cardata.sbr
+Debug\bt.Build.CppClean.log:c:\users\justin\downloads\torcs-1.3.6\src\drivers\bt\debug\driver.sbr
+Debug\bt.Build.CppClean.log:c:\users\justin\downloads\torcs-1.3.6\src\drivers\bt\debug\learn.sbr
+Debug\bt.Build.CppClean.log:c:\users\justin\downloads\torcs-1.3.6\src\drivers\bt\debug\opponent.sbr
+Debug\bt.Build.CppClean.log:c:\users\justin\downloads\torcs-1.3.6\src\drivers\bt\debug\pit.sbr
+Debug\bt.Build.CppClean.log:c:\users\justin\downloads\torcs-1.3.6\src\drivers\bt\debug\spline.sbr
+Debug\bt.Build.CppClean.log:c:\users\justin\downloads\torcs-1.3.6\src\drivers\bt\debug\strategy.sbr
+Debug\bt.Build.CppClean.log:c:\users\justin\downloads\torcs-1.3.6\src\drivers\bt\debug\strategy.nativecodeanalysis.xml
+Debug\bt.Build.CppClean.log:c:\users\justin\downloads\torcs-1.3.6\src\drivers\bt\debug\spline.nativecodeanalysis.xml
+Debug\bt.Build.CppClean.log:c:\users\justin\downloads\torcs-1.3.6\src\drivers\bt\debug\pit.nativecodeanalysis.xml
+Debug\bt.Build.CppClean.log:c:\users\justin\downloads\torcs-1.3.6\src\drivers\bt\debug\opponent.nativecodeanalysis.xml
+Debug\bt.Build.CppClean.log:c:\users\justin\downloads\torcs-1.3.6\src\drivers\bt\debug\cardata.nativecodeanalysis.xml
+Debug\bt.Build.CppClean.log:c:\users\justin\downloads\torcs-1.3.6\src\drivers\bt\debug\bt.nativecodeanalysis.xml
+Debug\bt.Build.CppClean.log:c:\users\justin\downloads\torcs-1.3.6\src\drivers\bt\debug\bt.obj
+Debug\bt.Build.CppClean.log:c:\users\justin\downloads\torcs-1.3.6\src\drivers\bt\debug\cardata.obj
+Debug\bt.Build.CppClean.log:c:\users\justin\downloads\torcs-1.3.6\src\drivers\bt\debug\opponent.obj
+Debug\bt.Build.CppClean.log:c:\users\justin\downloads\torcs-1.3.6\src\drivers\bt\debug\pit.obj
+Debug\bt.Build.CppClean.log:c:\users\justin\downloads\torcs-1.3.6\src\drivers\bt\debug\spline.obj
+Debug\bt.Build.CppClean.log:c:\users\justin\downloads\torcs-1.3.6\src\drivers\bt\debug\strategy.obj
+Debug\bt.Build.CppClean.log:c:\users\justin\downloads\torcs-1.3.6\src\drivers\bt\debug\
+Debug\bt.Build.CppClean.log:c:\users\justin\downloads\torcs-1.3.6\src\drivers\bt\debug\bt.tlog\cl.command.1.tlog
+Debug\bt.Build.CppClean.log:c:\users\justin\downloads\torcs-1.3.6\src\drivers\bt\debug\bt.tlog\cl.read.1.tlog
+Debug\bt.Build.CppClean.log:c:\users\justin\downloads\torcs-1.3.6\src\drivers\bt\debug\bt.tlog\cl.write.1.tlog
+Debug\bt.log:     1>Project "C:\Users\Justin\Downloads\torcs-1.3.6\src\drivers\bt\bt.vcxproj" on node 2 (Build target(s)).
+Debug\bt.log:         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I../../../export/include /I../../windows/include /I../../.. /Zi /nologo /W2 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D _USRDLL /D BT_EXPORTS /D DEBUG /D DEBUG_OUT /D _VC80_UPGRADE=0x0600 /D _WINDLL /D _MBCS /Gm- /EHsc /RTC1 /MTd /GS /Gy- /fp:precise /Zc:wchar_t /Zc:forScope /Fo".\Debug\\" /Fd".\Debug\vc120.pdb" /FR".\Debug\\" /Gd /TP /analyze- /errorReport:prompt bt.cpp driver.cpp learn.cpp opponent.cpp pit.cpp strategy.cpp
+Debug\bt.log:         bt.cpp
+Debug\bt.log:         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:".\Debug\bt.dll" /INCREMENTAL /NOLOGO /LIBPATH:../../../export/libd /LIBPATH:../../windows/lib tgf.lib robottools.lib sg.lib ul.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /NODEFAULTLIB:LIBCMT /DEF:".\bt.def" /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:".\Debug\bt.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\Debug\bt.lib" /MACHINE:X86 /SAFESEH /DLL .\Debug\bt.obj
+Debug\bt.log:     1>Done Building Project "C:\Users\Justin\Downloads\torcs-1.3.6\src\drivers\bt\bt.vcxproj" (Build target(s)) -- FAILED.
+Debug\opponent.nativecodeanalysis.xml:<DEFECTS><DEFECT><SFA><FILEPATH>c:\users\justin\downloads\torcs-1.3.6\src\drivers\bt\</FILEPATH><FILENAME>opponent.cpp</FILENAME><LINE>175</LINE><COLUMN>24</COLUMN></SFA><DEFECTCODE>6385</DEFECTCODE><DESCRIPTION>Reading invalid data from 'opponent':  the readable size is '((unsigned int)=(s-&gt;raceInfo.ncars-1)*1)*32' bytes, but '64' bytes may be read.</DESCRIPTION><FUNCTION>Opponents::{ctor}</FUNCTION><DECORATED>??0Opponents@@QAE@PAUSituation@@PAVDriver@@PAVCardata@@@Z</DECORATED><FUNCLINE>169</FUNCLINE><PROBABILITY>1</PROBABILITY><RANK>4</RANK><CATEGORY><RULECATEGORY>mspft</RULECATEGORY></CATEGORY><PATH><SFA><FILEPATH>c:\users\justin\downloads\torcs-1.3.6\src\drivers\bt\</FILEPATH><FILENAME>opponent.cpp</FILENAME><LINE>171</LINE><COLUMN>10</COLUMN></SFA><SFA><FILEPATH>c:\users\justin\downloads\torcs-1.3.6\src\drivers\bt\</FILEPATH><FILENAME>opponent.cpp</FILENAME><LINE>172</LINE><COLUMN>5</COLUMN></SFA><SFA><FILEPATH>c:\users\justin\downloads\torcs-1.3.6\src\drivers\bt\</FILEPATH><FILENAME>opponent.cpp</FILENAME><LINE>172</LINE><COLUMN>8</COLUMN></SFA><SFA><FILEPATH>c:\users\justin\downloads\torcs-1.3.6\src\drivers\bt\</FILEPATH><FILENAME>opponent.cpp</FILENAME><LINE>173</LINE><COLUMN>8</COLUMN></SFA><SFA><FILEPATH>c:\users\justin\downloads\torcs-1.3.6\src\drivers\bt\</FILEPATH><FILENAME>opponent.cpp</FILENAME><LINE>173</LINE><COLUMN>15</COLUMN><KEYEVENT><ID>1</ID><KIND>branch</KIND><IMPORTANCE>Full</IMPORTANCE><MESSAGE>Enter this loop, (assume 'i&lt;s-&gt;raceInfo.ncars')</MESSAGE></KEYEVENT></SFA><SFA><FILEPATH>c:\users\justin\downloads\torcs-1.3.6\src\drivers\bt\</FILEPATH><FILENAME>opponent.cpp</FILENAME><LINE>174</LINE><COLUMN>17</COLUMN><KEYEVENT><ID>2</ID><KIND>branch</KIND><IMPORTANCE>Full</IMPORTANCE><MESSAGE>Enter this branch, (assume '&lt;branch condition&gt;')</MESSAGE></KEYEVENT></SFA><SFA><FILEPATH>c:\users\justin\downloads\torcs-1.3.6\src\drivers\bt\</FILEPATH><FILENAME>opponent.cpp</FILENAME><LINE>175</LINE><COLUMN>24</COLUMN></SFA><SFA><FILEPATH>c:\users\justin\downloads\torcs-1.3.6\src\drivers\bt\</FILEPATH><FILENAME>opponent.cpp</FILENAME><LINE>176</LINE><COLUMN>28</COLUMN></SFA><SFA><FILEPATH>c:\users\justin\downloads\torcs-1.3.6\src\drivers\bt\</FILEPATH><FILENAME>opponent.cpp</FILENAME><LINE>177</LINE><COLUMN>4</COLUMN><KEYEVENT><ID>3</ID><KIND>declaration</KIND><IMPORTANCE>Essential</IMPORTANCE><MESSAGE>'j' may equal 1</MESSAGE></KEYEVENT></SFA><SFA><FILEPATH>c:\users\justin\downloads\torcs-1.3.6\src\drivers\bt\</FILEPATH><FILENAME>opponent.cpp</FILENAME><LINE>173</LINE><COLUMN>29</COLUMN></SFA><SFA><FILEPATH>c:\users\justin\downloads\torcs-1.3.6\src\drivers\bt\</FILEPATH><FILENAME>opponent.cpp</FILENAME><LINE>173</LINE><COLUMN>15</COLUMN><KEYEVENT><ID>4</ID><KIND>branch</KIND><IMPORTANCE>Full</IMPORTANCE><MESSAGE>Continue this loop, (assume 'i&lt;s-&gt;raceInfo.ncars')</MESSAGE></KEYEVENT></SFA><SFA><FILEPATH>c:\users\justin\downloads\torcs-1.3.6\src\drivers\bt\</FILEPATH><FILENAME>opponent.cpp</FILENAME><LINE>174</LINE><COLUMN>17</COLUMN><KEYEVENT><ID>5</ID><KIND>branch</KIND><IMPORTANCE>Full</IMPORTANCE><MESSAGE>Enter this branch, (assume '&lt;branch condition&gt;')</MESSAGE></KEYEVENT></SFA><SFA><FILEPATH>c:\users\justin\downloads\torcs-1.3.6\src\drivers\bt\</FILEPATH><FILENAME>opponent.cpp</FILENAME><LINE>175</LINE><COLUMN>24</COLUMN><KEYEVENT><ID>6</ID><KIND>declaration</KIND><IMPORTANCE>Full</IMPORTANCE><MESSAGE>'j' is an Output from 'Opponent::setCarPtr' (declared at c:\users\justin\downloads\torcs-1.3.6\src\drivers\bt\opponent.h:54)</MESSAGE></KEYEVENT></SFA><SFA><FILEPATH>c:\users\justin\downloads\torcs-1.3.6\src\drivers\bt\</FILEPATH><FILENAME>opponent.cpp</FILENAME><LINE>175</LINE><COLUMN>24</COLUMN><KEYEVENT><ID>7</ID><KIND>usage</KIND><IMPORTANCE>Essential</IMPORTANCE><MESSAGE>Invalid read from 'opponent[1]', (readable range is 0 to 0)</MESSAGE></KEYEVENT></SFA></PATH></DEFECT></DEFECTS>driver.cpp:			snprintf(buffer, BUFSIZE, "drivers/bt/%d/practice/%s", INDEX, trackname);
+driver.cpp:			snprintf(buffer, BUFSIZE, "drivers/bt/%d/qualifying/%s", INDEX, trackname);
+driver.cpp:			snprintf(buffer, BUFSIZE, "drivers/bt/%d/race/%s", INDEX, trackname);
+driver.cpp:		snprintf(buffer, BUFSIZE, "drivers/bt/%d/default.xml", INDEX);
+driver.cpp:	MU_FACTOR = GfParmGetNum(*carParmHandle, BT_SECT_PRIV, BT_ATT_MUFACTOR, (char*)NULL, 0.69f);
+driver.cpp:	const char *teammate = GfParmGetStr(car->_carHandle, BT_SECT_PRIV, BT_ATT_TEAMMATE, NULL);
+driver.h:#define BT_SECT_PRIV "bt private"
+driver.h:#define BT_ATT_FUELPERLAP "fuelperlap"
+driver.h:#define BT_ATT_MUFACTOR "mufactor"
+driver.h:#define BT_ATT_PITTIME "pittime"
+driver.h:#define BT_ATT_BESTLAP "bestlap"
+driver.h:#define BT_ATT_WORSTLAP "worstlap"
+driver.h:#define BT_ATT_TEAMMATE "teammate"
+learn.cpp:			fd = tryKarmaFilename(buffer, sizeof(buffer), "%sdrivers/bt/%d/race/%s.karma", driverindex, tbuf, s->_raceType == RM_TYPE_RACE);
+learn.cpp:			fd = tryKarmaFilename(buffer, sizeof(buffer), "%sdrivers/bt/%d/qualifying/%s.karma", driverindex, tbuf, s->_raceType == RM_TYPE_QUALIF);
+learn.cpp:			fd = tryKarmaFilename(buffer, sizeof(buffer), "%sdrivers/bt/%d/practice/%s.karma", driverindex, tbuf, s->_raceType == RM_TYPE_PRACTICE);
+Makefile:ROBOT       = bt
+pit.cpp:			//printf("bt: Pitexit broken on track %s.\n", track->name);
+Release\bt.Build.CppClean.log:c:\users\justin\downloads\torcs-1.3.6\src\drivers\bt\release\bt.lib
+Release\bt.Build.CppClean.log:c:\users\justin\downloads\torcs-1.3.6\src\drivers\bt\release\bt.exp
+Release\bt.Build.CppClean.log:c:\users\justin\downloads\torcs-1.3.6\src\drivers\bt\release\vc120.pdb
+Release\bt.Build.CppClean.log:c:\users\justin\downloads\torcs-1.3.6\src\drivers\bt\release\strategy.obj
+Release\bt.Build.CppClean.log:c:\users\justin\downloads\torcs-1.3.6\src\drivers\bt\release\spline.obj
+Release\bt.Build.CppClean.log:c:\users\justin\downloads\torcs-1.3.6\src\drivers\bt\release\pit.obj
+Release\bt.Build.CppClean.log:c:\users\justin\downloads\torcs-1.3.6\src\drivers\bt\release\opponent.obj
+Release\bt.Build.CppClean.log:c:\users\justin\downloads\torcs-1.3.6\src\drivers\bt\release\learn.obj
+Release\bt.Build.CppClean.log:c:\users\justin\downloads\torcs-1.3.6\src\drivers\bt\release\driver.obj
+Release\bt.Build.CppClean.log:c:\users\justin\downloads\torcs-1.3.6\src\drivers\bt\release\cardata.obj
+Release\bt.Build.CppClean.log:c:\users\justin\downloads\torcs-1.3.6\src\drivers\bt\release\bt.obj
+Release\bt.Build.CppClean.log:c:\users\justin\downloads\torcs-1.3.6\src\drivers\bt\release\bt.dll
+Release\bt.Build.CppClean.log:c:\users\justin\downloads\torcs-1.3.6\src\drivers\bt\.\release\bt.dll
+Release\bt.Build.CppClean.log:c:\users\justin\downloads\torcs-1.3.6\src\drivers\bt\release\bt.tlog\bt.write.1u.tlog
+Release\bt.Build.CppClean.log:c:\users\justin\downloads\torcs-1.3.6\src\drivers\bt\release\bt.tlog\cl.command.1.tlog
+Release\bt.Build.CppClean.log:c:\users\justin\downloads\torcs-1.3.6\src\drivers\bt\release\bt.tlog\cl.read.1.tlog
+Release\bt.Build.CppClean.log:c:\users\justin\downloads\torcs-1.3.6\src\drivers\bt\release\bt.tlog\cl.write.1.tlog
+Release\bt.Build.CppClean.log:c:\users\justin\downloads\torcs-1.3.6\src\drivers\bt\release\bt.tlog\link.command.1.tlog
+Release\bt.Build.CppClean.log:c:\users\justin\downloads\torcs-1.3.6\src\drivers\bt\release\bt.tlog\link.read.1.tlog
+Release\bt.Build.CppClean.log:c:\users\justin\downloads\torcs-1.3.6\src\drivers\bt\release\bt.tlog\link.write.1.tlog
+Release\bt.log:     1>Project "C:\Users\Justin\Downloads\torcs-1.3.6\src\drivers\bt\bt.vcxproj" on node 2 (Rebuild target(s)).
+Release\bt.log:         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I../../../export/include /I../../windows/include /I../../.. /Zi /nologo /W2 /WX- /O2 /Ob2 /Oy- /D WIN32 /D NDEBUG /D _WINDOWS /D _USRDLL /D BT_EXPORTS /D _VC80_UPGRADE=0x0600 /D _WINDLL /D _MBCS /GF /Gm- /EHsc /MT /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo".\Release\\" /Fd".\Release\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt bt.cpp cardata.cpp driver.cpp learn.cpp opponent.cpp pit.cpp spline.cpp strategy.cpp
+Release\bt.log:         bt.cpp
+Release\bt.log:         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:".\Release\bt.dll" /INCREMENTAL:NO /NOLOGO /LIBPATH:../../../export/lib /LIBPATH:../../windows/lib tgf.lib robottools.lib sg.lib ul.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /DEF:".\bt.def" /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\Release\bt.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\Release\bt.lib" /MACHINE:X86 /SAFESEH:NO /DLL .\Release\bt.obj
+Release\bt.log:            Creating library .\Release\bt.lib and object .\Release\bt.exp
+Release\bt.log:         bt.vcxproj -> C:\Users\Justin\Downloads\torcs-1.3.6\src\drivers\bt\.\Release\bt.dll
+Release\bt.log:         copy C:\Users\Justin\Downloads\torcs-1.3.6\src\drivers\bt\Release\*.dll C:\Users\Justin\Downloads\torcs-1.3.6\runtime\drivers\bt
+Release\bt.log:         C:\Users\Justin\Downloads\torcs-1.3.6\src\drivers\bt\Release\bt.dll
+Release\bt.log:     1>Done Building Project "C:\Users\Justin\Downloads\torcs-1.3.6\src\drivers\bt\bt.vcxproj" (Rebuild target(s)).
+strategy.cpp:	float fuel = GfParmGetNum(*carParmHandle, BT_SECT_PRIV, BT_ATT_FUELPERLAP, (char*) NULL, t->length*MAX_FUEL_PER_METER);
+strategy.cpp:	float fuel = GfParmGetNum(*carParmHandle, BT_SECT_PRIV, BT_ATT_FUELPERLAP, (char*) NULL, t->length*MAX_FUEL_PER_METER);
+strategy.cpp:	m_pittime = GfParmGetNum(*carParmHandle, BT_SECT_PRIV, BT_ATT_PITTIME, (char*) NULL, 25.0f);
+strategy.cpp:	m_bestlap = GfParmGetNum(*carParmHandle, BT_SECT_PRIV, BT_ATT_BESTLAP, (char*) NULL, 87.0f);
+strategy.cpp:	m_worstlap = GfParmGetNum(*carParmHandle, BT_SECT_PRIV, BT_ATT_WORSTLAP, (char*) NULL, 87.0f);

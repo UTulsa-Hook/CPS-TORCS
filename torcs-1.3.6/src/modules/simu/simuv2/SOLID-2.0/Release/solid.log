@@ -1,0 +1,49 @@
+﻿Build started 6/1/2015 10:59:02 PM.
+     1>Project "C:\Users\Justin\Downloads\torcs-1.3.6\src\modules\simu\simuv2\SOLID-2.0\solid.vcxproj" on node 5 (Rebuild target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I../../../../../export/include /I../../../../libs/torcs /Zi /nologo /W2 /WX- /O2 /Ob2 /Oy- /D WIN32 /D NDEBUG /D _LIB /D _VC80_UPGRADE=0x0600 /D _MBCS /GF /Gm- /EHsc /MT /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo".\Release\\" /Fd".\Release\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt src\BBoxTree.cpp src\Box.cpp "src\C-api.cpp" src\Complex.cpp src\Cone.cpp src\Convex.cpp src\Cylinder.cpp src\Endpoint.cpp src\Object.cpp src\Polygon.cpp src\Polyhedron.cpp src\Response.cpp src\RespTable.cpp src\Simplex.cpp src\Sphere.cpp src\Transform.cpp
+         BBoxTree.cpp
+         Box.cpp
+         C-api.cpp
+         Complex.cpp
+         Cone.cpp
+         Convex.cpp
+         Cylinder.cpp
+         Endpoint.cpp
+         Object.cpp
+         Polygon.cpp
+         Polyhedron.cpp
+         Response.cpp
+         RespTable.cpp
+         Simplex.cpp
+         Sphere.cpp
+         Transform.cpp
+         Generating Code...
+       Lib:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\Lib.exe /OUT:".\Release\solid.lib" /NOLOGO .\Release\BBoxTree.obj
+         .\Release\Box.obj
+         ".\Release\C-api.obj"
+         .\Release\Complex.obj
+         .\Release\Cone.obj
+         .\Release\Convex.obj
+         .\Release\Cylinder.obj
+         .\Release\Endpoint.obj
+         .\Release\Object.obj
+         .\Release\Polygon.obj
+         .\Release\Polyhedron.obj
+         .\Release\Response.obj
+         .\Release\RespTable.obj
+         .\Release\Simplex.obj
+         .\Release\Sphere.obj
+         .\Release\Transform.obj
+         solid.vcxproj -> C:\Users\Justin\Downloads\torcs-1.3.6\src\modules\simu\simuv2\SOLID-2.0\.\Release\solid.lib
+       PostBuildEvent:
+         copy C:\Users\Justin\Downloads\torcs-1.3.6\src\modules\simu\simuv2\SOLID-2.0\Release\*.lib C:\Users\Justin\Downloads\torcs-1.3.6\export\lib
+         :VCEnd
+         C:\Users\Justin\Downloads\torcs-1.3.6\src\modules\simu\simuv2\SOLID-2.0\Release\solid.lib
+                 1 file(s) copied.
+     1>Done Building Project "C:\Users\Justin\Downloads\torcs-1.3.6\src\modules\simu\simuv2\SOLID-2.0\solid.vcxproj" (Rebuild target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:14.58

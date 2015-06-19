@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<DEFECTS><DEFECT><SFA><FILEPATH>c:\users\justin\downloads\torcs-1.3.6\src\tools\accc\</FILEPATH><FILENAME>mainaccc.cpp</FILENAME><LINE>123</LINE><COLUMN>8</COLUMN></SFA><DEFECTCODE>6031</DEFECTCODE><DESCRIPTION>Return value ignored: 'sscanf'.</DESCRIPTION><FUNCTION>init_args</FUNCTION><DECORATED>?init_args@@YAXHPAPAD@Z</DECORATED><FUNCLINE>103</FUNCLINE><PATH/></DEFECT></DEFECTS>

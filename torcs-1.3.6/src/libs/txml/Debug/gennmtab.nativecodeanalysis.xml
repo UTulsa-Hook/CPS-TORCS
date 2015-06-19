@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<DEFECTS><DEFECT><SFA><FILEPATH>c:\users\justin\downloads\torcs-1.3.6\src\libs\txml\</FILEPATH><FILENAME>gennmtab.c</FILENAME><LINE>434</LINE><COLUMN>4</COLUMN></SFA><DEFECTCODE>6262</DEFECTCODE><DESCRIPTION>Function uses '131072' bytes of stack:  exceeds /analyze:stacksize '16384'.  Consider moving some data to heap.</DESCRIPTION><FUNCTION>main</FUNCTION><DECORATED>main</DECORATED><FUNCLINE>434</FUNCLINE><PATH/></DEFECT></DEFECTS>

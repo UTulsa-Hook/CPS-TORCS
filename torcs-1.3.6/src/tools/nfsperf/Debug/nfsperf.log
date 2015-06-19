@@ -1,0 +1,17 @@
+﻿Build started 5/30/2015 4:08:23 PM.
+     1>Project "C:\Users\Justin\Downloads\torcs-1.3.6\src\tools\nfsperf\nfsperf.vcxproj" on node 3 (Build target(s)).
+     1>Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:".\Debug\nfsperf.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /NODEFAULTLIB:LIBCMT /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:".\Debug\nfsperf.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\Debug\nfsperf.lib" /MACHINE:X86 /SAFESEH .\Debug\mainnfsperf.obj
+         "C:\Users\Justin\Downloads\torcs-1.3.6\src\libs\tgf\Debug\tgf.lib"
+         nfsperf.vcxproj -> C:\Users\Justin\Downloads\torcs-1.3.6\src\tools\nfsperf\.\Debug\nfsperf.exe
+       BscMake:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\bscmake.exe /nologo /o".\Debug\nfsperf.bsc" .\Debug\mainnfsperf.sbr
+       PostBuildEvent:
+         copy C:\Users\Justin\Downloads\torcs-1.3.6\src\tools\nfsperf\Debug\nfsperf.exe C:\Users\Justin\Downloads\torcs-1.3.6\runtimed
+         :VCEnd
+                 1 file(s) copied.
+     1>Done Building Project "C:\Users\Justin\Downloads\torcs-1.3.6\src\tools\nfsperf\nfsperf.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:11.39

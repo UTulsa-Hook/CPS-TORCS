@@ -1,0 +1,20 @@
+﻿Build started 5/30/2015 4:08:22 PM.
+     1>Project "C:\Users\Justin\Downloads\torcs-1.3.6\src\libs\robottools\robottools.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I../../../export/include /I../../windows/include /I../../.. /Zi /nologo /W2 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D _USRDLL /D ROBOTTOOLS_EXPORTS /D DEBUG /D DEBUG_OUT /D _VC80_UPGRADE=0x0600 /D _WINDLL /D _MBCS /Gm- /EHsc /RTC1 /MTd /GS /Gy- /fp:precise /Zc:wchar_t /Zc:forScope /Fo".\Debug\\" /Fd".\Debug\vc120.pdb" /FR".\Debug\\" /Gd /TP /analyze- /errorReport:prompt rttelem.cpp rttrack.cpp
+         rttelem.cpp
+         rttrack.cpp
+         Generating Code...
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:".\Debug\robottools.dll" /INCREMENTAL /NOLOGO /LIBPATH:../../../export/libd /LIBPATH:../../windows/lib tgf.lib sg.lib ul.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /NODEFAULTLIB:LIBCMT /DEF:".\robotools.def" /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:".\Debug\robottools.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\Debug\robottools.lib" /MACHINE:X86 /SAFESEH /DLL .\Debug\rttelem.obj
+         .\Debug\rttrack.obj
+         "C:\Users\Justin\Downloads\torcs-1.3.6\src\libs\tgf\Debug\tgf.lib"
+     1>sg.lib(sgd.obj) : error LNK2026: module unsafe for SAFESEH image.
+     1>ul.lib(ulError.obj) : error LNK2026: module unsafe for SAFESEH image.
+            Creating library .\Debug\robottools.lib and object .\Debug\robottools.exp
+     1>.\Debug\robottools.dll : fatal error LNK1281: Unable to generate SAFESEH image.
+     1>Done Building Project "C:\Users\Justin\Downloads\torcs-1.3.6\src\libs\robottools\robottools.vcxproj" (Build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:02.49

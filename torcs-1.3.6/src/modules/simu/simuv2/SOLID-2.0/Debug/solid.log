@@ -1,0 +1,100 @@
+﻿Build started 5/30/2015 4:08:08 PM.
+     1>Project "C:\Users\Justin\Downloads\torcs-1.3.6\src\modules\simu\simuv2\SOLID-2.0\solid.vcxproj" on node 5 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I../../../../../export/include /I../../../../libs/torcs /Zi /nologo /W2 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _LIB /D DEBUG /D DEBUG_OUT /D _VC80_UPGRADE=0x0600 /D _MBCS /Gm- /EHsc /RTC1 /MTd /GS /Gy- /fp:precise /Zc:wchar_t /Zc:forScope /Fo".\Debug\\" /Fd".\Debug\vc120.pdb" /FR".\Debug\\" /Gd /TP /analyze- /errorReport:prompt src\BBoxTree.cpp src\Box.cpp "src\C-api.cpp" src\Complex.cpp src\Cone.cpp src\Convex.cpp src\Cylinder.cpp src\Endpoint.cpp src\Object.cpp src\Polygon.cpp src\Polyhedron.cpp src\Response.cpp src\RespTable.cpp src\Simplex.cpp src\Sphere.cpp src\Transform.cpp
+         BBoxTree.cpp
+     1>C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\xutility(2132): warning C4996: 'std::_Copy_impl': Function call with parameters that may be unsafe - this call relies on the caller to check that the passed values are correct. To disable this warning, use -D_SCL_SECURE_NO_WARNINGS. See documentation on how to use Visual C++ 'Checked Iterators'
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\xutility(2113) : see declaration of 'std::_Copy_impl'
+                 c:\users\justin\downloads\torcs-1.3.6\src\modules\simu\simuv2\solid-2.0\src\IndexArray.h(41) : see reference to function template instantiation '_OutIt std::copy<const unsigned int*,unsigned int*>(_InIt,_InIt,_OutIt)' being compiled
+                 with
+                 [
+                     _OutIt=unsigned int *
+         ,            _InIt=const unsigned int *
+                 ]
+         Box.cpp
+         C-api.cpp
+     1>C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\xutility(2132): warning C4996: 'std::_Copy_impl': Function call with parameters that may be unsafe - this call relies on the caller to check that the passed values are correct. To disable this warning, use -D_SCL_SECURE_NO_WARNINGS. See documentation on how to use Visual C++ 'Checked Iterators'
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\xutility(2113) : see declaration of 'std::_Copy_impl'
+                 c:\users\justin\downloads\torcs-1.3.6\src\modules\simu\simuv2\solid-2.0\src\IndexArray.h(41) : see reference to function template instantiation '_OutIt std::copy<const unsigned int*,unsigned int*>(_InIt,_InIt,_OutIt)' being compiled
+                 with
+                 [
+                     _OutIt=unsigned int *
+         ,            _InIt=const unsigned int *
+                 ]
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\xutility(2113) : see declaration of 'std::_Copy_impl'
+         Complex.cpp
+     1>C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\xutility(2132): warning C4996: 'std::_Copy_impl': Function call with parameters that may be unsafe - this call relies on the caller to check that the passed values are correct. To disable this warning, use -D_SCL_SECURE_NO_WARNINGS. See documentation on how to use Visual C++ 'Checked Iterators'
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\xutility(2113) : see declaration of 'std::_Copy_impl'
+                 c:\users\justin\downloads\torcs-1.3.6\src\modules\simu\simuv2\solid-2.0\src\IndexArray.h(41) : see reference to function template instantiation '_OutIt std::copy<const unsigned int*,unsigned int*>(_InIt,_InIt,_OutIt)' being compiled
+                 with
+                 [
+                     _OutIt=unsigned int *
+         ,            _InIt=const unsigned int *
+                 ]
+         Cone.cpp
+         Convex.cpp
+         Cylinder.cpp
+         Endpoint.cpp
+         Object.cpp
+         Polygon.cpp
+     1>C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\xutility(2132): warning C4996: 'std::_Copy_impl': Function call with parameters that may be unsafe - this call relies on the caller to check that the passed values are correct. To disable this warning, use -D_SCL_SECURE_NO_WARNINGS. See documentation on how to use Visual C++ 'Checked Iterators'
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\xutility(2113) : see declaration of 'std::_Copy_impl'
+                 c:\users\justin\downloads\torcs-1.3.6\src\modules\simu\simuv2\solid-2.0\src\IndexArray.h(41) : see reference to function template instantiation '_OutIt std::copy<const unsigned int*,unsigned int*>(_InIt,_InIt,_OutIt)' being compiled
+                 with
+                 [
+                     _OutIt=unsigned int *
+         ,            _InIt=const unsigned int *
+                 ]
+         Polyhedron.cpp
+     1>C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\xutility(2132): warning C4996: 'std::_Copy_impl': Function call with parameters that may be unsafe - this call relies on the caller to check that the passed values are correct. To disable this warning, use -D_SCL_SECURE_NO_WARNINGS. See documentation on how to use Visual C++ 'Checked Iterators'
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\xutility(2113) : see declaration of 'std::_Copy_impl'
+                 c:\users\justin\downloads\torcs-1.3.6\src\modules\simu\simuv2\solid-2.0\src\IndexArray.h(41) : see reference to function template instantiation '_OutIt std::copy<const unsigned int*,unsigned int*>(_InIt,_InIt,_OutIt)' being compiled
+                 with
+                 [
+                     _OutIt=unsigned int *
+         ,            _InIt=const unsigned int *
+                 ]
+         Response.cpp
+         RespTable.cpp
+         Simplex.cpp
+     1>C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\xutility(2132): warning C4996: 'std::_Copy_impl': Function call with parameters that may be unsafe - this call relies on the caller to check that the passed values are correct. To disable this warning, use -D_SCL_SECURE_NO_WARNINGS. See documentation on how to use Visual C++ 'Checked Iterators'
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\xutility(2113) : see declaration of 'std::_Copy_impl'
+                 c:\users\justin\downloads\torcs-1.3.6\src\modules\simu\simuv2\solid-2.0\src\IndexArray.h(41) : see reference to function template instantiation '_OutIt std::copy<const unsigned int*,unsigned int*>(_InIt,_InIt,_OutIt)' being compiled
+                 with
+                 [
+                     _OutIt=unsigned int *
+         ,            _InIt=const unsigned int *
+                 ]
+         Sphere.cpp
+         Transform.cpp
+         Generating Code...
+       Lib:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\Lib.exe /OUT:".\Debug\solid.lib" /NOLOGO .\Debug\BBoxTree.obj
+         .\Debug\Box.obj
+         ".\Debug\C-api.obj"
+         .\Debug\Complex.obj
+         .\Debug\Cone.obj
+         .\Debug\Convex.obj
+         .\Debug\Cylinder.obj
+         .\Debug\Endpoint.obj
+         .\Debug\Object.obj
+         .\Debug\Polygon.obj
+         .\Debug\Polyhedron.obj
+         .\Debug\Response.obj
+         .\Debug\RespTable.obj
+         .\Debug\Simplex.obj
+         .\Debug\Sphere.obj
+         .\Debug\Transform.obj
+         solid.vcxproj -> C:\Users\Justin\Downloads\torcs-1.3.6\src\modules\simu\simuv2\SOLID-2.0\.\Debug\solid.lib
+       BscMake:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\bscmake.exe /nologo /o".\Debug\solid.bsc" .\Debug\BBoxTree.sbr .\Debug\Box.sbr ".\Debug\C-api.sbr" .\Debug\Complex.sbr .\Debug\Cone.sbr .\Debug\Convex.sbr .\Debug\Cylinder.sbr .\Debug\Endpoint.sbr .\Debug\Object.sbr .\Debug\Polygon.sbr .\Debug\Polyhedron.sbr .\Debug\Response.sbr .\Debug\RespTable.sbr .\Debug\Simplex.sbr .\Debug\Sphere.sbr .\Debug\Transform.sbr
+       PostBuildEvent:
+         copy C:\Users\Justin\Downloads\torcs-1.3.6\src\modules\simu\simuv2\SOLID-2.0\Debug\*.lib C:\Users\Justin\Downloads\torcs-1.3.6\export\libd
+         :VCEnd
+         C:\Users\Justin\Downloads\torcs-1.3.6\src\modules\simu\simuv2\SOLID-2.0\Debug\solid.lib
+                 1 file(s) copied.
+     1>Done Building Project "C:\Users\Justin\Downloads\torcs-1.3.6\src\modules\simu\simuv2\SOLID-2.0\solid.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:15.91
